@@ -1,0 +1,164 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1f63a3;
+    color: white;
+}
+
+.navbar-logo img {
+    height: 74px; 
+    width: auto;
+    vertical-align: middle; 
+    margin-left: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+    align-items: center; 
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.card-title{
+    color:  #1f63a3;
+}
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.loading-gif {
+    width: 300px; /* Adjust size as needed */
+    height: 300px;
+}
+
+.footer-m{
+    background-color: #1f63a3;
+    color: black;
+}
+
+footer {
+    /* padding: 20px 0; */
+}
+
+footer h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.date{
+    color: white;
+    font-weight: 800;
+}
+footer a {
+    font-size: 20px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #007bff; /* Change to your desired hover color */
+}
+
+.logo-footer{
+    height: 74px; 
+    width: auto;
+}
+
+.iplug{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.pastor{
+    height: 300px;
+    
+
+}
+
+.icon{
+    color: white;
+    font-weight: 700;
+}
+
+.footer-icon {
+    color: white;
+    margin-right: 15px;
+  }
+  
+  .footer-icon:hover {
+    color: #ddd;
+  }
+
+  .global{
+    color: white;
+    font-weight: 900;
+  }
+  .global-p{
+    color: white;
+  }
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: #333;
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: flex;
+        margin-right: 20px;
+    }
+
+    footer .row {
+        text-align: center;
+    }
+
+    footer .col-md-6 {
+        margin-bottom: 20px;
+    }
+
+    footer .col-md-6.text-md-right {
+        text-align: center !important;
+    }
+
+    footer a {
+        margin: 0 10px;
+    }
+}
